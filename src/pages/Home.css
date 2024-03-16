@@ -1,0 +1,62 @@
+.containers{
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)),url('../assets/FastrentID.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex   ;
+    align-items: center;
+    justify-content: center;
+}
+
+.containers-text{
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Define keyframes for rainbow effect */
+@keyframes rainbow {
+  0% { color: rgba(255, 0, 0, 1); } /* Red */
+  16% { color: rgba(255, 165, 0, 1); } /* Orange */
+  33% { color: rgba(255, 255, 0, 1); } /* Yellow */
+  50% { color: rgba(0, 128, 0, 1); } /* Green */
+  67% { color: rgba(0, 0, 255, 1); } /* Blue */
+  84% { color: rgba(75, 0, 130, 1); } /* Indigo */
+  100% { color: rgba(238, 130, 238, 1); } /* Violet */
+}
+
+/* Apply rainbow animation to h1 element */
+.containers-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  animation: rainbow 5s infinite; /* Apply the rainbow animation for 5 seconds infinitely */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .containers-text h1 {
+    font-size: 40px;
+    animation: none; /* Remove the rainbow animation on smaller screens */
+  }
+}
+
+.containers-text p{
+    max-width: 700px;
+    margin: 10px auto 20px;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.btn{
+    background-color: rgb(66, 10, 249);
+    color: #212121;
+    padding: 14px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
