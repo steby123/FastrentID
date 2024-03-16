@@ -3,9 +3,12 @@ import MobilMpv from '../../assets/Desain-tanpa-judul-35.jpg';
 import MobilSuv from '../../assets/images.jpg';
 import MobilSedan from '../../assets/download.jpg';
 import MobilAlphad from '../../assets/toyota-alphard-terbaru.png';
+import Title from '../Title/Title';
 
 const PhotoHome = () => {
     return(
+        <>
+        <Title subTitle="Our Car" offer="What We Offer"/>
         <div className="programs">
             <div className="program">
                 <img src={MobilMpv} alt="Mobil MPV" />
@@ -20,6 +23,7 @@ const PhotoHome = () => {
                 <img src={MobilAlphad} alt="Mobil Minivan" />
             </div>
         </div>
+        </>
     )
 }
 
