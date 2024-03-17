@@ -2,7 +2,7 @@ import './PhotoHome.css';
 import MobilMpv from '../../assets/Desain-tanpa-judul-35.jpg';
 import MobilSuv from '../../assets/images.jpg';
 import MobilSedan from '../../assets/download.jpg';
-import MobilAlphad from '../../assets/toyota-alphard-terbaru.png';
+import MobilAlphad from '../../assets/Mobil-MiniVan.png';
 import Title from '../Title/Title';
 
 const PhotoHome = () => {

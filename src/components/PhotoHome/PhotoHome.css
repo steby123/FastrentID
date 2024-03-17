@@ -12,6 +12,7 @@
     border-radius: 30px;
     display: block;
     cursor: pointer;
+    opacity: 1;
 }
 
 .program img:hover{
@@ -20,8 +21,19 @@
 
 .program img:active{
     transform: scale(0.9);
+    opacity: 0.5;
 }
 
 .program{
     flex-basis: 31%; 
+}
+
+@media (max-width: 650px){
+    .program{
+        flex-direction: column;
+    }
+    .program{
+        flex-basis: 100%;
+        margin: 20px;
+    }
 }
