@@ -5,8 +5,9 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className='socialIcons'>
-                <Link to=""><i className="fab fa-instagram"></i></Link>
-                <Link to=""><i className='fab fa-whatsapp'></i></Link>
+                <Link to="https://www.instagram.com/fastrent.id?igsh=c3kxdHlyeHViNm9r"><i className="fab fa-instagram"></i></Link>
+                <Link to="https://www.tiktok.com/@fastrent.id?_t=8kmbrMRcH9L&_r=1"><i className='fab fa-whatsapp'></i></Link>
+                <Link to=""><i className='fab fa-tiktok'></i></Link>
             </div>
             <div className='footerNav'>
                 <ul>
