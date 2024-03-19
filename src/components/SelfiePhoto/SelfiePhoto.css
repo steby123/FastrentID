@@ -1,0 +1,65 @@
+.selfie{
+    margin: 80px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.selfie h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 40px;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 23%;
+    border-radius: 360%;
+    height: 350px;
+    filter: brightness(100%) contrast(100%) saturate(0%) blur(0px) hue-rotate(0deg);
+    transition: 1s infinite;
+}
+
+.gallery img:hover{
+    filter: none;
+    transform:rotateY(180deg);
+}
+
+.img-container {
+    text-align: center;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 350px;
+}
+
+.img-container h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 650px) {
+    .gallery {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 20px auto; 
+    }
+
+    .gallery img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 50%; 
+        margin-bottom: 20px; 
+    }
+}

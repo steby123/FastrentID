@@ -22,7 +22,7 @@ a{
   padding-right: 10%;
 }
 
-.btn{
+.btn {
   background-color: #fff;
   color: #212121;
   padding: 14px 25px;
@@ -31,4 +31,28 @@ a{
   cursor: pointer;
   border: none;
   outline: none;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.btn:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+  color: #000; /* Change text color on hover */
+}
+
+.btn:active {
+  transform: translateY(1px); /* Add slight downward movement on click */
+}
+
+.btn img {
+  width: 15px;
+  margin-left: 10px;
+}
+
+.btn.dark-btn {
+  background-color: rgb(68, 133, 219);
+  color: #fff;
+}
+
+.btn.dark-btn:hover {
+  background-color: rgb(38, 103, 189); /* Change background color on hover */
 }

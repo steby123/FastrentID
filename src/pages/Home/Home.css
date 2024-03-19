@@ -1,7 +1,7 @@
 .containers{
     width: 100%;
     min-height: 100vh;
-    background:linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)),url('../../assets//FastrentID.jpg');
+    background:linear-gradient(rgba(8,0,58,0.7),rgba(8,0,58,0.7)),url('../../assets/fastrent.JPG');
     background-size: cover;
     background-position: center;
     display: flex   ;
@@ -25,18 +25,4 @@
     margin: 10px auto 20px;
     line-height: 1.4;
     color: #fff;
-}
-
-.btn{
-    background-color: rgb(66, 10, 249);
-    color: #212121;
-    padding: 14px 25px;
-    font-size: 16px;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 0;
-    outline: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 }

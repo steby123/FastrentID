@@ -12,15 +12,19 @@ const PhotoHome = () => {
         <div className="programs">
             <div className="program">
                 <img src={MobilMpv} alt="Mobil MPV" />
+                <h3>Mobil MPV</h3>
             </div>
             <div className="program">
                 <img src={MobilSuv} alt="Mobil SUV" />
+                <h3>Mobil SUV</h3>
             </div>
             <div className="program">
                 <img src={MobilSedan} alt="Mobil Sedan" />
+                <h3>Mobil Sedan</h3>
             </div>
             <div className="program">
                 <img src={MobilAlphad} alt="Mobil Minivan" />
+                <h3>Mobil Minivan</h3>
             </div>
         </div>
         </>

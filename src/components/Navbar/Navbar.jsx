@@ -3,7 +3,6 @@ import './Navbar.css';
 import FastrentIDLogo from '../../assets/FastrentID.jpg'
 import { NavLink } from "react-router-dom";
 import MenuIcon from '../../assets/MenuIcon.png';
-import CloseIcon from '../../assets/CloseIcon.jpg';
 
 const Navbar = () => {
     const [count, setCount] = useState(0)
@@ -17,24 +16,21 @@ const Navbar = () => {
     },[])
 
     const HandleIcon = () => {
-        setMenuIcon(!menuIcon)
+        menuIcon ? setMenuIcon(false) : setMenuIcon(true);
+        console.log('click')
     }
     
     return (
         <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
             <img src={FastrentIDLogo} alt="logo" className="logo"/>
-            <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/car">Car</NavLink></li>
-                <li><NavLink to="/about">About Us</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
-                <li> <NavLink to = "/cart"> <button className = "btn">Cart {count}</button></NavLink></li>
+            <ul className={menuIcon ? "" : "hide-mobile-menu"}>
+                <li><NavLink to="/" activeClaactiveClassName="active">Home</NavLink></li>
+                <li><NavLink to="/car" activeClassName="active">Car</NavLink></li>
+                <li><NavLink to="/about" activeClassName="active">About Us</NavLink></li>
+                <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
+                <li> <NavLink to = "/cart" activeClassName="active"> <button className = "btn">Cart {count}</button></NavLink></li>
             </ul>
-            {menuIcon ? (
-                <img src={CloseIcon} alt="CloseIcon" className="close-icon" onClick={HandleIcon}/>
-            ):(
-                <img src={MenuIcon} alt="MenuIcon" className="menu-icon" onClick={HandleIcon} />
-            )}
+            <img src={MenuIcon} alt="menu-icon" className="menu-icon" onClick={HandleIcon}/>
         </nav>
     );
 }
