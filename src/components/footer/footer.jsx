@@ -11,7 +11,7 @@ const Footer = () => {
             </div>
             <div className='footerNav'>
                 <ul>
-                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                     <li><Link to="/car">Car</Link></li>
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
